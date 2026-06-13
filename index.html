@@ -55,19 +55,31 @@
         .firstSection{
             display: flex;
             justify-content: space-around;
-            margin: 23vw 0;
+            margin: 40px 0;
             align-items: center;
         }
         .firstSection > div{
             width: 30%;
         }
         .leftSection{
-            
-            margin: 70px;
+            margin-left: 50px;
             font-size: 3rem;
         }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size:20px;
+            cursor: pointer;
+        }
         .rightSection img{
-            width:70%;
+            width:90%;
+            max-width:500px;
         }
         .purple{
             color: blueviolet;
@@ -78,6 +90,7 @@
         .secondSection{
             max-width:80vw;
             margin:auto;
+            height: 80vh;
         }
         main hr{
             border:0;
@@ -90,6 +103,58 @@
         }
         .text-grey{
             color:gray;
+        }
+        .secondSection .box{
+            background: white;
+            width: 80vw;
+            height:2px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+
+        }
+        .image-top{
+            width:23px;
+            position:relative;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-title{
+            position:relative;
+            top:75px;
+            width: 150px;
+        }
+        .vertical-desc{
+            position:relative;
+            top:86px;
+            color:gray;
+            width: 150px;
+            font-size:9px;
+        }
+        footer{
+            background-color: rgb(51, 48, 113);
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color:gray;
+            padding: 12px;
         }
     </style>
 </head>
@@ -115,6 +180,10 @@
                 <div class="purple">My name is Arbind</div>               
                 <div> well move</div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Downoad resume</button>
+                    <button class="btn">visit Github</button>
+                </div>
             </div>
             <div class="rightSection">
                 <img src="robo.png" alt="">
@@ -124,8 +193,81 @@
         <section class="secondSection">
             <span class="text-grey">Things i have done so Far</span>
             <h1>Past Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        html developer 2023-2026
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus officiis qui sequi incidunt illo, beatae illum voluptas atque, vitae, ullam quis. Voluptate, corrupti.
+                    </div>
+                </div>
+                 <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        html developer 2023-2026
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus officiis qui sequi incidunt illo, beatae illum voluptas atque, vitae, ullam quis. Voluptate, corrupti.
+                    </div>
+                </div>
+                 <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        html developer 2023-2026
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus officiis qui sequi incidunt illo, beatae illum voluptas atque, vitae, ullam quis. Voluptate, corrupti.
+                    </div>
+                </div>
+                 <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        html developer 2023-2026
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus officiis qui sequi incidunt illo, beatae illum voluptas atque, vitae, ullam quis. Voluptate, corrupti.
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h1>Titan's domain</h1>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>terms</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>terms</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>terms</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer-rights">
+                &#169; www.titansdomain.com| All rights reserved.
+            </div>
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
      <script>
     var typed = new Typed('#element', {
